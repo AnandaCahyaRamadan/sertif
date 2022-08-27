@@ -16,7 +16,7 @@
 
                 <div class="form-group">
                             <label for="exampleInputPesan">Tanggal Pemesanan</label>
-                            <input type="text" class="form-control @error('tanggal_pesan') is-invalid @enderror" id="exampleInputPesan" placeholder="tanggan Pesan" name="tanggal_pesan" value="{{old('tanggal_pesan')}}">
+                            <input type="date" class="form-control @error('tanggal_pesan') is-invalid @enderror" id="exampleInputPesan" placeholder="tanggan Pesan" name="tanggal_pesan" value="{{old('tanggal_pesan')}}">
                             @error('tanggal_pesan') <span class="text-danger">{{$message}}</span> @enderror
                         </div>
                        

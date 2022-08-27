@@ -16,7 +16,7 @@
                     <div class="card-body">
                         <div class="form-group">
                             <label for="exampleInputTGL">Tanggal Pemesanan</label>
-                            <input type="text" class="form-control @error('tanggal_pesan') is-invalid @enderror" id="exampleInputTGL" placeholder="Masukkan Tanggal" name="tanggal_pesan" value="{{$pemesanan->tanggal_pesan ?? old('tanggal_pesan')}}">
+                            <input type="date" class="form-control @error('tanggal_pesan') is-invalid @enderror" id="exampleInputTGL" placeholder="Masukkan Tanggal" name="tanggal_pesan" value="{{$pemesanan->tanggal_pesan ?? old('tanggal_pesan')}}">
                             @error('tanggal_pesan') <span class="text-danger">{{$message}}</span> @enderror
                         </div>
                         <div class="form-group">
