@@ -4,7 +4,6 @@
 @section('page')
     <li class="breadcrumb-item active">Dashboard</li>
 @endsection
-
 @section('content')
     <!-- Main content -->
     <section class="content">
