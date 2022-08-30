@@ -105,8 +105,9 @@ public function update(Request $request, $id)
      */
     public function destroy(Request $request, $id)
     {
+        
         $user = User::find($id);
-    
+        
         if ($id == $request->user()->id) return redirect()->route('users.index')
             ->with('error_message', 'Anda tidak dapat menghapus diri sendiri.');
     
@@ -116,6 +117,7 @@ public function update(Request $request, $id)
             ->with('success_message', 'Berhasil menghapus user');
     
     }
+    //method pencarian
     public function search(Request $request)
     {
         $keyword = $request->search;
